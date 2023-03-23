@@ -3,7 +3,7 @@ class Shape:
     def __init__(self, width, height):
         self.width = width
         self.height = height
-    def perm(self):
+    def calculatePerimeter(self):
         a = (self.width*2) + (self.height*2)
         print("Total length:\n",a," cm")
         return a
@@ -14,7 +14,7 @@ class Shape:
     def displayInfo(self):
         print("Dimensions: width = {} cm height = {} cm".format(self.width, self.height))   
         Dimension.calculateArea()
-        Dimension.perm()
+        Dimension.calculatePerimeter()
   
 print("Welcome to the geometry calculator!\n")        
 Dimension = Shape(float(input("Enter the width in centimeters:")), float(input("Enter the length in centimeters:")))
