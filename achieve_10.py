@@ -9,13 +9,14 @@ class Shape:
         return a
     def calculateArea(self):
         b = (self.width*self.height)
-        print("Total area:\n",b," cm^2")
+        print("Total area:\n",b," cm²")
         return b
     def displayInfo(self):
-        print("Dimensions: width = {} height = {}".format(self.width, self.height))   
+        print("Dimensions: width = {} cm height = {} cm".format(self.width, self.height))   
         Dimension.calculateArea()
         Dimension.perm()
-print("Enter width followed by height")        
-Dimension = Shape(float(input()), float(input()))
+  
+print("Welcome to the geometry calculator!\n")        
+Dimension = Shape(float(input("Enter the width in centimeters:")), float(input("Enter the length in centimeters:")))
 
 Dimension.displayInfo()
